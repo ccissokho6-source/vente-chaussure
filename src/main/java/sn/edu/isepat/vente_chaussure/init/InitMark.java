@@ -10,6 +10,7 @@ import sn.edu.isepat.vente_chaussure.repositories.MarkRepository;
 @Component
 public class InitMark implements CommandLineRunner {
 
+
     private final MarkRepository markRepository;
 
     public InitMark(MarkRepository markRepository) {

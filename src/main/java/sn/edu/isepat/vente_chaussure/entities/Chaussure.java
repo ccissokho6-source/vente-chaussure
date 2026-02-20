@@ -10,11 +10,12 @@ import lombok.Setter;
 @Table(name = "chaussure")
 public class Chaussure {
     @Id
-    @GeneratedValue( strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(length = 100, nullable = false)
-    private String nom;
+    @Column(length = 50, nullable = false)
+    private  String nom;
+
 
     @Column(nullable = false)
     private Double prix;

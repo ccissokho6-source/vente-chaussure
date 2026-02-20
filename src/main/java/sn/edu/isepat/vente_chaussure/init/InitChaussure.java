@@ -9,6 +9,7 @@ import sn.edu.isepat.vente_chaussure.repositories.ChaussureRepository;
 @Order(2)
 @Component
 public class InitChaussure implements CommandLineRunner {
+
     private final ChaussureRepository chaussureRepository;
     public InitChaussure(ChaussureRepository chaussureRepository) {
         this.chaussureRepository = chaussureRepository;
@@ -27,4 +28,5 @@ public class InitChaussure implements CommandLineRunner {
         chaussureRepository.save(timberland2);
 
     }
+
 }
